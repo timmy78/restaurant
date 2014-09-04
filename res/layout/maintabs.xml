@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/mt_lt_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/menu_bas_fond_menu"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/mt_lt_home"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mt_img_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:src="@drawable/menu_bas_icone_1accueil_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mt_lt_gallery"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mt_img_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:src="@drawable/menu_bas_icone_2galerie_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mt_lt_bp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mt_img_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:src="@drawable/menu_bas_icone_3bonplan_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mt_lt_facebook"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mt_img_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:src="@drawable/menu_bas_icone_5facebook_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mt_lt_twitter"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mt_img_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:src="@drawable/menu_bas_icone_6web_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mt_lt_account"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mt_img_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:src="@drawable/menu_bas_icone_7moncompte_on" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mt_lt_account_informations"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/mt_img_account_informations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mt_lt_account_password_recovery"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/mt_img_account_password_recovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_above="@+id/mt_lt_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bg"
+         >
+
+        <FrameLayout
+            android:id="@+id/mt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/menu_bas_fond_degrade" />
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Notifications" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="is_push"
+            android:summary="Activez les fonctions push"
+            android:title="Push" >
+        </CheckBoxPreference>
+
+        <!--
+        <RingtonePreference
+            android:dependency="is_push"
+            android:key="id_ring"
+            android:summary="Choisissez la sonnerie pour les notifications"
+            android:title="Sonnerie de notification" >
+        </RingtonePreference>
+        -->
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:dependency="is_push"
+            android:key="is_vibrate"
+            android:summary="Vibre lors d&apos;une notification"
+            android:title="Vibreur" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

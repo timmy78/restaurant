@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tabMedium">#2B2B2B</color>
+    <color name="tabDark">#000000</color>
+    <color name="tabTransparent">#10ffffff</color>
+    <color name="loading_text">#d95403</color>
+    <color name="black">#000000</color>
+    <color name="grey">#DADADA</color>
+    <color name="darkgrey">#DADADA</color>
+    <color name="lightgrey">#EEEEEE</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#F49A2C</color>
+
+    <!-- ScrollSelector -->
+    <color name="scrollSelector_textColor_selected">#ffffff</color>
+    <color name="scrollSelector_textColor_default">#ffffff</color>
+    <color name="actionbar_title_color">#224894</color>
+    <color name="title">#33B5E5</color>
+    <color name="content">#3C3C3B</color>
+    <color name="bg">#EBEBEB</color>
+    <color name="bg2">#DADADA</color>
+    <color name="pressed">#CC97e08f</color>
+
+</resources>

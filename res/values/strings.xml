@@ -1,0 +1,82 @@
+<resources>
+
+    <string name="app_name">Restaurant de Paris</string>
+    <string name="ok">OK</string>
+    <string name="popup_erreur_connexion">Aucune connexion. Vous devez vous connecter à Internet pour effectuer cette action.</string>
+    <string name="popup_info_wait">Veuillez patienter &#8230;</string>
+    <string name="popup_erreur_ws">Erreur du serveur.</string>
+    <string name="popup_erreur_no_facebook">Ce commerçant n\'a pas renseigné de page facebook.</string>
+    <string name="popup_erreur_no_twitter">Ce commerçant n\'a pas renseigné de site Internet.</string>
+    <string name="popup_erreur_gallery">Ce commerçant n\'a pas encore ajouté de photos.</string>
+    
+    <!-- Mon Compte -->
+    <string name="popup_error_civilite_empty">Merci de renseigner votre genre</string>
+    <string name="popup_error_firstname_empty">Merci de renseigner votre prénom</string>
+    <string name="popup_error_lastname_empty">Merci de renseigner votre nom</string>
+    <string name="popup_error_phone_empty">Merci de renseigner un téléphone fixe ou mobile</string>
+    <string name="popup_error_email_empty">Merci de renseigner un e-mail valide</string>
+    <string name="popup_error_date_naissance_empty">Merci de renseigner votre date de naissance</string>
+    <string name="popup_error_password_empty">Merci de renseigner un mot de passe</string>
+    <string name="popup_error_password_confirm_empty">Merci de renseigner le mot de passe de confirmation</string>
+    <string name="popup_error_password_confirm_not_equal">Les mots de passe sont différents. Merci de vérifier votre saisie</string>
+    <string name="popup_error_already_register">Le compte existe déjà</string>
+    <string name="popup_info_register_finished">Inscription terminée. Connectez-vous maintenant avec vos identifiants.</string>
+    <string name="popup_info_register_updated">Mise à jour terminée.</string>
+    <string name="popup_info_register_needed">Vous devez être identifié.</string>
+    <string name="popup_info_login_incorrect">Identification incorrecte</string>
+    <string name="refuser">Refuser</string>
+    <string name="accepter">Accepter</string>
+    <string name="cancel">Annuler</string>
+    <string name="valider">Valider</string>
+
+    <!-- Bon Plan -->
+    <string name="bonplan_activity_title">Menu du jour</string>
+    <string name="bonplan_activity_texte">Notre menu :</string>
+    <string name="bonplan_activity_button">Réserver une table</string>
+
+    <!-- Login -->
+    <string name="connection_activity_title">Identification</string>
+    <string name="connection_activity_rubrique">S\'identifier</string>
+    <string name="connection_activity_notregistered">Cliquez ici pour vous inscrire</string>
+    <string name="connection_activity_register">Créez un nouveau compte</string>
+    <string name="connection_activity_email">E-mail :</string>
+    <string name="connection_activity_password">Mot de passe :</string>
+    <string name="connection_activity_btn">Valider</string>
+    <string name="connection_activity_forgot">Mot de passe oublié ?</string>
+
+    <!-- Password Recovery -->
+    <string name="password_recovery_activity_title">Récupérez votre mot de passe en indiquant votre adresse e-mail.</string>
+    <string name="password_recovery_activity_rubrique">Mot de passe perdu ?</string>
+    <string name="password_recovery_activity_email">E-mail :</string>
+    <string name="password_recovery_activity_btn">Valider</string>
+    <string name="password_recovery_activity_hint_email">Entrez votre e-mail</string>
+
+    <!-- Account -->
+    <string name="account_activity_btn_notregistered">Créez votre compte en renseignant les informations suivantes.</string>
+    <string name="account_activity_btn_registered">Modifiez les informations de votre compte.</string>
+    <string name="account_activity_mr">Monsieur</string>
+    <string name="account_activity_mme">Madame</string>
+    <string name="account_activity_fname">Prénom :</string>
+    <string name="account_activity_lname">Nom :</string>
+    <string name="account_activity_email">E-mail :</string>
+    <string name="account_activity_tel">Téléphone fixe :</string>
+    <string name="account_activity_mobile">Téléphone mobile :</string>
+    <string name="account_activity_date_naissance">Date de naissance :</string>
+    <string name="account_activity_pass">Mot de passe :</string>
+    <string name="account_activity_cpass">Confirmation du mot de passe :</string>
+    <string name="account_activity_btn">Valider</string>
+    <string name="account_activity_hint_email">Entrez votre e-mail</string>
+    <string name="account_activity_hint_password">Entrez votre mot de passe</string>
+
+    <!-- About -->
+    <string name="about_activity_title">A propos</string>
+    <string name="about_title1">A PROPOS</string>
+    <string name="about_text1">L\'application est un TP</string>
+    <string name="about_title2">MENTIONS LÉGALES</string>
+    <string name="about_text2">Editeur :\nTravaux Pratique\n\nSiège social :\n8 rue de Paris\n75001 PARIS</string>
+
+    <!-- Menu -->
+    <string name="menu_action_disconnect">Déconnexion</string>
+    <string name="menu_action_about">A propos</string>
+
+</resources>
