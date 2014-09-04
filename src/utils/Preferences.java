@@ -56,13 +56,13 @@ public final class Preferences {
 		Editor prefsEditor = get(context).edit();
 
 		if(object != null) {
-			//Log.e("setCommercant", "id: "+object.getId());
+			//Log.e("setCommercant", "id: "+object.id);
 
 			Gson gsonp = new Gson();
 			String jsonp = gsonp.toJson(object);
 			prefsEditor.putString(Constant.PREFERENCE_APP_CONNEXION, jsonp);
 
-			//Log.e("setInformations", "id: "+object.getId()+" "+jsonp);
+			//Log.e("setInformations", "id: "+object.id+" "+jsonp);
 
 		} else {
 			prefsEditor.putString(Constant.PREFERENCE_APP_CONNEXION, "");
@@ -105,16 +105,16 @@ public final class Preferences {
 			boolean exist = false;
 
 			for(int i=0;i<getCommercantAccessList(context).size();i++) {
-				if(getCommercantAccessList(context).get(i).getId().equalsIgnoreCase(object.getId())) {
+				if(getCommercantAccessList(context).get(i).id.equalsIgnoreCase(object.id)) {
 					exist = true;
 				}
 				
 				commercant.add(getCommercantAccessList(context).get(i));
 
-				if(getCommercantAccessList(context).get(i).getId().equalsIgnoreCase(object.getId()) && getCommercantAccessList(context).get(i).getTel().equalsIgnoreCase(object.getTel()) == false) {
-					commercant.get(i).setTel(object.getTel());
-				} else if(getCommercantAccessList(context).get(i).getId().equalsIgnoreCase(object.getId()) && getCommercantAccessList(context).get(i).getDateGeolocalisation() != object.getDateGeolocalisation()) {
-					commercant.get(i).setDateGeolocalisation(object.getDateGeolocalisation());
+				if(getCommercantAccessList(context).get(i).id.equalsIgnoreCase(object.id) && getCommercantAccessList(context).get(i).tel.equalsIgnoreCase(object.tel) == false) {
+					commercant.get(i).tel = object.tel;
+				} else if(getCommercantAccessList(context).get(i).id.equalsIgnoreCase(object.id) && getCommercantAccessList(context).get(i).dateGeolocalisation != object.dateGeolocalisation) {
+					commercant.get(i).dateGeolocalisation = object.dateGeolocalisation;
 				}
 			}
 

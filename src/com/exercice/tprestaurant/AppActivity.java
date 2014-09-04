@@ -7,6 +7,7 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -29,7 +30,7 @@ public class AppActivity extends FragmentActivity {
 		content.addView(view, 0);
 		super.setContentView(mainView);
 	}
-
+	
 	@Override
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 
@@ -57,4 +58,43 @@ public class AppActivity extends FragmentActivity {
 
 		return super.onMenuItemSelected(featureId, item);
 	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		
+		switch (item.getItemId()) {
+
+		case android.R.id.home:
+			finish();
+			break;
+
+		case R.id.action_about:
+			startActivity(new Intent(AppActivity.this, AboutActivity.class));
+			break;
+
+		case R.id.action_disconnect:
+
+			Preferences.setInformations(AppActivity.this, null); // delete Informations
+			Preferences.setUser(AppActivity.this, null); // delete User
+
+			startActivity(new Intent(AppActivity.this, SplashScreenActivity.class));
+
+			break;
+		default:
+			break;
+		}
+		
+		return super.onOptionsItemSelected(item);
+	}
+	
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        	
+        return true;
+    }
+
+	
 }

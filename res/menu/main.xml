@@ -10,6 +10,7 @@
         android:id="@+id/action_disconnect"
         android:icon="@android:drawable/ic_secure"
         android:showAsAction="never"
+        android:visible="false"
         android:title="@string/menu_action_disconnect"/>
     <item
         android:id="@+id/action_about"

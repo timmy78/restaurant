@@ -89,7 +89,7 @@ public class MainTabsActivity extends AppActivity {
 
 				@Override
 				public void onClick(View v) {
-					if(Preferences.getInformations(mContext) != null && Preferences.getInformations(mContext).getPhotos() != null && Preferences.getInformations(mContext).getPhotos().size() > 0) {
+					if(Preferences.getInformations(mContext) != null && Preferences.getInformations(mContext).photos != null && Preferences.getInformations(mContext).photos.size() > 0) {
 						toogleTab(v);
 						imgGallery.setImageResource(R.drawable.menu_bas_icone_2galerie_active);
 						switchContent(new GalleryFragment(), null);
@@ -119,10 +119,10 @@ public class MainTabsActivity extends AppActivity {
 
 				@Override
 				public void onClick(View v) {
-					if (cm.getFacebook() != null && cm.getFacebook().toString().length() > 0) {
+					if (cm.facebook != null && cm.facebook.toString().length() > 0) {
 						toogleTab(v);
 						imgFacebook.setImageResource(R.drawable.menu_bas_icone_5facebook_active);
-						switchContent(new WebPageFragment(), cm.getFacebook());
+						switchContent(new WebPageFragment(), cm.facebook);
 
 						// getActionBar
 					} else {
@@ -136,10 +136,10 @@ public class MainTabsActivity extends AppActivity {
 
 				@Override
 				public void onClick(View v) {
-					if (cm.getTwitter() != null && cm.getTwitter().toString().length() > 0) {
+					if (cm.twitter != null && cm.twitter.toString().length() > 0) {
 						toogleTab(v);
 						imgWeb.setImageResource(R.drawable.menu_bas_icone_6web_active);
-						switchContent(new WebPageFragment(), cm.getTwitter());
+						switchContent(new WebPageFragment(), cm.twitter);
 
 						// getActionBar
 					} else {

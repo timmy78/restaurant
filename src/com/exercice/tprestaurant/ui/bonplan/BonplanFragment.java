@@ -56,7 +56,7 @@ public class BonplanFragment extends Fragment {
 		this.cm = Preferences.getInformations(mActivity);
 		this.contenu = (TextView) getActivity().findViewById(R.id.bp_text);
 		
-		this.contenu.setText(cm.getBonplanContenu());
+		this.contenu.setText(cm.bonplanContenu);
 		
 		super.onActivityCreated(savedInstanceState);
 	}

@@ -39,7 +39,7 @@ public class GalleryFragment extends Fragment {
 		Gallery gallery_photos = (Gallery) getActivity().findViewById(R.id.gallery_photos);
 
 		if(getActivity() != null) {
-			AdapterGalleryPhotos mAdapter=new AdapterGalleryPhotos(getActivity(), R.layout.listphotos_row, Preferences.getInformations(getActivity()).getPhotos());
+			AdapterGalleryPhotos mAdapter=new AdapterGalleryPhotos(getActivity(), R.layout.listphotos_row, Preferences.getInformations(getActivity()).photos);
 			gallery_photos.setAdapter(mAdapter);
 			
 			// TODO 

@@ -49,8 +49,8 @@ public class PresentationFragment extends Fragment {
 		this.viewText = (TextView) mActivity.findViewById(R.id.presentation_text);
 		this.commercant = Preferences.getInformations(mActivity);
 		
-		this.viewText.setText(this.commercant.getPresentationContenu());
-		Picasso.with(mActivity).load(this.commercant.getPhotos().get(0).getFileImg()).into(this.viewImage);
+		this.viewText.setText(this.commercant.presentationContenu);
+		Picasso.with(mActivity).load(this.commercant.photos.get(0).getFileImg()).into(this.viewImage);
 		
 	}
 

@@ -101,7 +101,7 @@ public class ConnectionFragment extends Fragment {
 				@Override
 				public void onClick(View v) {
 					if(Network.isNetworkAvailable(mActivity)) {
-						new AsyncCallWSConnection().execute(email.getText().toString(), password.getText().toString(), Preferences.getInformations(mActivity).getId());
+						new AsyncCallWSConnection().execute(email.getText().toString(), password.getText().toString(), Preferences.getInformations(mActivity).id);
 					} else {
 						FastDialog.showDialog(mActivity,
 								FastDialog.SIMPLE_DIALOG,
