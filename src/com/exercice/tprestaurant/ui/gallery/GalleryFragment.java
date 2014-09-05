@@ -3,6 +3,7 @@ package com.exercice.tprestaurant.ui.gallery;
 import utils.Preferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,7 +40,11 @@ public class GalleryFragment extends Fragment {
 		Gallery gallery_photos = (Gallery) getActivity().findViewById(R.id.gallery_photos);
 
 		if(getActivity() != null) {
-			AdapterGalleryPhotos mAdapter=new AdapterGalleryPhotos(getActivity(), R.layout.listphotos_row, Preferences.getInformations(getActivity()).photos);
+			
+			Log.e("gallery",Preferences.getInformations(getActivity()).photos.toString());
+			
+			AdapterGalleryPhotos mAdapter=new AdapterGalleryPhotos(getActivity(), R.layout.listphotos_row, Preferences.getInformations(getActivity()).photos);		
+			
 			gallery_photos.setAdapter(mAdapter);
 			
 			// TODO 

@@ -4,10 +4,13 @@ import java.io.Console;
 import java.util.List;
 
 import utils.FastDialog;
+import utils.Preferences;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.provider.MediaStore.Files;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,6 +32,7 @@ import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.squareup.picasso.Picasso;
 
 public class AdapterGalleryPhotos extends ArrayAdapter<Photos>  {
 	/** The parent context */
@@ -50,9 +54,12 @@ public class AdapterGalleryPhotos extends ArrayAdapter<Photos>  {
 	// Returns a new ImageView to be displayed,
 	public View getView(int position, View convertView, ViewGroup parent) {
 
-		 
+		//create the view
+	    ImageView imageView = new ImageView(c);
+	    //specify the bitmap at this position in the array
+		Picasso.with(c).load(this.getItem(position).getFileImg()).into(imageView);
 
-		return convertView;
+		return imageView;
 	}
 
 	static class ViewHolder {

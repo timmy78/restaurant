@@ -25,6 +25,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.exercice.tprestaurant.Constant;
 import com.exercice.tprestaurant.R;
@@ -104,7 +105,7 @@ public class AccountFragment extends Fragment {
 
 				GsonBuilder builder = new GsonBuilder();
 				Gson gson = builder.create();
-				HttpResponse streamData = Network.getData(Constant.URL_WS_APP_CLIENT_INFO + Preferences.getInformations(mActivity).id + "/" + Preferences.getUser(mActivity).getId());
+				HttpResponse streamData = Network.getData(Constant.URL_WS_APP_CLIENT_INFO + Preferences.getInformations(mActivity).id + "/" + Preferences.getUser(mActivity).id);
 				if (streamData.getStatusLine().getStatusCode() == 200) {
 					Reader reader = new InputStreamReader(streamData.getEntity().getContent());
 
@@ -157,7 +158,10 @@ public class AccountFragment extends Fragment {
 					email = (EditText) mActivity.findViewById(R.id.editTextEmail);
 					password = (EditText) mActivity.findViewById(R.id.editTextPassword);
 					passwordConf = (EditText) mActivity.findViewById(R.id.editTextPasswordConfirmation);
-
+					
+					TextView title = (TextView) mActivity.findViewById(R.id.textViewTitle);
+					title.setText("Modification");
+					
 					if(result.getUser().civilite.toString().equalsIgnoreCase("0")){
 						genreH.setChecked(true);
 					}else{
