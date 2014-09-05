@@ -158,7 +158,7 @@ public class MainTabsActivity extends AppActivity {
 
 					// getActionBar
 
-					if(Preferences.getUser(getApplicationContext()) != null && Preferences.getUser(getApplicationContext()).getId() != 0) {
+					if(Preferences.getUser(getApplicationContext()) != null && Preferences.getUser(getApplicationContext()).id != 0) {
 						switchContent(new RegisterFragment(), null);
 					} else {
 						switchContent(new ConnectionFragment(), null);	

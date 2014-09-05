@@ -168,8 +168,6 @@ public class RegisterFragment extends Fragment {
 					GsonBuilder builder = new GsonBuilder();
 					Gson gson = builder.create();
 
-					//Log.e("connexion", Constant.URL_WS_APP_CLIENT_LOGIN+params[0]+"/"+params[1]+"/"+params[2]);
-
 					List<NameValuePair> data = new ArrayList<NameValuePair>();
 					data.add(new BasicNameValuePair("civilite", params[0]));
 					data.add(new BasicNameValuePair("prenom", params[1]));
@@ -199,7 +197,7 @@ public class RegisterFragment extends Fragment {
 							if(statusUserRegister.getStatus().equalsIgnoreCase("ok")) {
 
 								User user = statusUserRegister.getUser();
-								user.setPassword(params[1]);
+								user.password = params[1];
 
 								//Log.e("password", user.getPassword());
 
