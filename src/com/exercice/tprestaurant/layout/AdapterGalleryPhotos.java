@@ -1,5 +1,6 @@
 package com.exercice.tprestaurant.layout;
 
+import java.io.Console;
 import java.util.List;
 
 import utils.FastDialog;
@@ -39,6 +40,7 @@ public class AdapterGalleryPhotos extends ArrayAdapter<Photos>  {
 
 	/** Simple Constructor saving the 'parent' context. */
 	public AdapterGalleryPhotos(Context c, int textViewResourceId, List<Photos> objects) {
+		
 		super(c, textViewResourceId, objects);
 
 		mInflater = LayoutInflater.from(c);
@@ -46,10 +48,9 @@ public class AdapterGalleryPhotos extends ArrayAdapter<Photos>  {
 	}
 
 	// Returns a new ImageView to be displayed,
-	public View getView(int position, View convertView, 
-			ViewGroup parent) {
+	public View getView(int position, View convertView, ViewGroup parent) {
 
-		
+		 
 
 		return convertView;
 	}

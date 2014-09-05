@@ -18,7 +18,4 @@ public class SplashScreenActivity extends AppActivity {
 			.add(R.id.splashscreen_container, fragment).commit();
 		}
 	}
-
-
-
 }

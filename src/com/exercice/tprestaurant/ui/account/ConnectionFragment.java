@@ -100,12 +100,25 @@ public class ConnectionFragment extends Fragment {
 
 				@Override
 				public void onClick(View v) {
+					
+					if(email.getText().toString().isEmpty()){
+						FastDialog.showDialog(mActivity,
+								FastDialog.SIMPLE_DIALOG,
+								"Email doit être renseigné");
+				
+					}
+					
+					if(password.getText().toString().isEmpty()){
+						FastDialog.showDialog(mActivity,
+								FastDialog.SIMPLE_DIALOG,
+								"Mot de passe Vide");
+					
+					}
+					
 					if(Network.isNetworkAvailable(mActivity)) {
 						new AsyncCallWSConnection().execute(email.getText().toString(), password.getText().toString(), Preferences.getInformations(mActivity).id);
 					} else {
-						FastDialog.showDialog(mActivity,
-								FastDialog.SIMPLE_DIALOG,
-								getString(R.string.popup_erreur_connexion));
+						
 					}
 				}
 			});
