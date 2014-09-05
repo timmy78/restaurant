@@ -20,6 +20,7 @@
     <string name="popup_error_password_confirm_empty">Merci de renseigner le mot de passe de confirmation</string>
     <string name="popup_error_password_confirm_not_equal">Les mots de passe sont différents. Merci de vérifier votre saisie</string>
     <string name="popup_error_already_register">Le compte existe déjà</string>
+    <string name="popup_error_register">Erreur lors de l\'inscription</string>
     <string name="popup_info_register_finished">Inscription terminée. Connectez-vous maintenant avec vos identifiants.</string>
     <string name="popup_info_register_updated">Mise à jour terminée.</string>
     <string name="popup_info_register_needed">Vous devez être identifié.</string>
@@ -61,7 +62,7 @@
     <string name="account_activity_email">E-mail :</string>
     <string name="account_activity_tel">Téléphone fixe :</string>
     <string name="account_activity_mobile">Téléphone mobile :</string>
-    <string name="account_activity_date_naissance">Date de naissance :</string>
+    <string name="account_activity_date_naissance">Date de naissance (jj/mm/aaaa) :</string>
     <string name="account_activity_pass">Mot de passe :</string>
     <string name="account_activity_cpass">Confirmation du mot de passe :</string>
     <string name="account_activity_btn">Valider</string>
