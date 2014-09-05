@@ -50,6 +50,7 @@ public class PresentationFragment extends Fragment {
 		this.commercant = Preferences.getInformations(mActivity);
 		
 		this.viewText.setText(this.commercant.presentationContenu);
+		//http://square.github.io/picasso/
 		Picasso.with(mActivity).load(this.commercant.photos.get(0).getFileImg()).into(this.viewImage);
 		
 	}

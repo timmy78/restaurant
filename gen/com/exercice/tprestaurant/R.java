@@ -166,58 +166,58 @@ public final class R {
     public static final class string {
         /**  About 
          */
-        public static final int about_activity_title=0x7f070039;
-        public static final int about_text1=0x7f07003b;
-        public static final int about_text2=0x7f07003d;
-        public static final int about_title1=0x7f07003a;
-        public static final int about_title2=0x7f07003c;
-        public static final int accepter=0x7f070017;
-        public static final int account_activity_btn=0x7f070036;
+        public static final int about_activity_title=0x7f07003a;
+        public static final int about_text1=0x7f07003c;
+        public static final int about_text2=0x7f07003e;
+        public static final int about_title1=0x7f07003b;
+        public static final int about_title2=0x7f07003d;
+        public static final int accepter=0x7f070018;
+        public static final int account_activity_btn=0x7f070037;
         /**  Account 
          */
-        public static final int account_activity_btn_notregistered=0x7f07002a;
-        public static final int account_activity_btn_registered=0x7f07002b;
-        public static final int account_activity_cpass=0x7f070035;
-        public static final int account_activity_date_naissance=0x7f070033;
-        public static final int account_activity_email=0x7f070030;
-        public static final int account_activity_fname=0x7f07002e;
-        public static final int account_activity_hint_email=0x7f070037;
-        public static final int account_activity_hint_password=0x7f070038;
-        public static final int account_activity_lname=0x7f07002f;
-        public static final int account_activity_mme=0x7f07002d;
-        public static final int account_activity_mobile=0x7f070032;
-        public static final int account_activity_mr=0x7f07002c;
-        public static final int account_activity_pass=0x7f070034;
-        public static final int account_activity_tel=0x7f070031;
+        public static final int account_activity_btn_notregistered=0x7f07002b;
+        public static final int account_activity_btn_registered=0x7f07002c;
+        public static final int account_activity_cpass=0x7f070036;
+        public static final int account_activity_date_naissance=0x7f070034;
+        public static final int account_activity_email=0x7f070031;
+        public static final int account_activity_fname=0x7f07002f;
+        public static final int account_activity_hint_email=0x7f070038;
+        public static final int account_activity_hint_password=0x7f070039;
+        public static final int account_activity_lname=0x7f070030;
+        public static final int account_activity_mme=0x7f07002e;
+        public static final int account_activity_mobile=0x7f070033;
+        public static final int account_activity_mr=0x7f07002d;
+        public static final int account_activity_pass=0x7f070035;
+        public static final int account_activity_tel=0x7f070032;
         public static final int app_name=0x7f070000;
-        public static final int bonplan_activity_button=0x7f07001c;
-        public static final int bonplan_activity_texte=0x7f07001b;
+        public static final int bonplan_activity_button=0x7f07001d;
+        public static final int bonplan_activity_texte=0x7f07001c;
         /**  Bon Plan 
          */
-        public static final int bonplan_activity_title=0x7f07001a;
-        public static final int cancel=0x7f070018;
-        public static final int connection_activity_btn=0x7f070023;
-        public static final int connection_activity_email=0x7f070021;
-        public static final int connection_activity_forgot=0x7f070024;
-        public static final int connection_activity_notregistered=0x7f07001f;
-        public static final int connection_activity_password=0x7f070022;
-        public static final int connection_activity_register=0x7f070020;
-        public static final int connection_activity_rubrique=0x7f07001e;
+        public static final int bonplan_activity_title=0x7f07001b;
+        public static final int cancel=0x7f070019;
+        public static final int connection_activity_btn=0x7f070024;
+        public static final int connection_activity_email=0x7f070022;
+        public static final int connection_activity_forgot=0x7f070025;
+        public static final int connection_activity_notregistered=0x7f070020;
+        public static final int connection_activity_password=0x7f070023;
+        public static final int connection_activity_register=0x7f070021;
+        public static final int connection_activity_rubrique=0x7f07001f;
         /**  Login 
          */
-        public static final int connection_activity_title=0x7f07001d;
-        public static final int menu_action_about=0x7f07003f;
+        public static final int connection_activity_title=0x7f07001e;
+        public static final int menu_action_about=0x7f070040;
         /**  Menu 
          */
-        public static final int menu_action_disconnect=0x7f07003e;
+        public static final int menu_action_disconnect=0x7f07003f;
         public static final int ok=0x7f070001;
-        public static final int password_recovery_activity_btn=0x7f070028;
-        public static final int password_recovery_activity_email=0x7f070027;
-        public static final int password_recovery_activity_hint_email=0x7f070029;
-        public static final int password_recovery_activity_rubrique=0x7f070026;
+        public static final int password_recovery_activity_btn=0x7f070029;
+        public static final int password_recovery_activity_email=0x7f070028;
+        public static final int password_recovery_activity_hint_email=0x7f07002a;
+        public static final int password_recovery_activity_rubrique=0x7f070027;
         /**  Password Recovery 
          */
-        public static final int password_recovery_activity_title=0x7f070025;
+        public static final int password_recovery_activity_title=0x7f070026;
         public static final int popup_erreur_connexion=0x7f070002;
         public static final int popup_erreur_gallery=0x7f070007;
         public static final int popup_erreur_no_facebook=0x7f070005;
@@ -235,13 +235,14 @@ public final class R {
         public static final int popup_error_password_confirm_not_equal=0x7f070010;
         public static final int popup_error_password_empty=0x7f07000e;
         public static final int popup_error_phone_empty=0x7f07000b;
-        public static final int popup_info_login_incorrect=0x7f070015;
-        public static final int popup_info_register_finished=0x7f070012;
-        public static final int popup_info_register_needed=0x7f070014;
-        public static final int popup_info_register_updated=0x7f070013;
+        public static final int popup_error_register=0x7f070012;
+        public static final int popup_info_login_incorrect=0x7f070016;
+        public static final int popup_info_register_finished=0x7f070013;
+        public static final int popup_info_register_needed=0x7f070015;
+        public static final int popup_info_register_updated=0x7f070014;
         public static final int popup_info_wait=0x7f070003;
-        public static final int refuser=0x7f070016;
-        public static final int valider=0x7f070019;
+        public static final int refuser=0x7f070017;
+        public static final int valider=0x7f07001a;
     }
     public static final class style {
         /** 
