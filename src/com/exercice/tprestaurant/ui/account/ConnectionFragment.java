@@ -29,7 +29,9 @@ import android.os.Bundle;
 import android.provider.Settings.Secure;
 import android.support.v4.app.Fragment;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -40,6 +42,7 @@ import com.exercice.tprestaurant.R;
 import com.exercice.tprestaurant.backend.data.User;
 import com.exercice.tprestaurant.backend.status.StatusUserConnexion;
 import com.exercice.tprestaurant.ui.maintabs.MainTabsActivity;
+import com.exercice.tprestaurant.ui.splashscreen.SplashScreenActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -105,20 +108,22 @@ public class ConnectionFragment extends Fragment {
 						FastDialog.showDialog(mActivity,
 								FastDialog.SIMPLE_DIALOG,
 								"Email doit être renseigné");
-				
+						return;
 					}
 					
 					if(password.getText().toString().isEmpty()){
 						FastDialog.showDialog(mActivity,
 								FastDialog.SIMPLE_DIALOG,
 								"Mot de passe Vide");
-					
+						return;
 					}
 					
 					if(Network.isNetworkAvailable(mActivity)) {
 						new AsyncCallWSConnection().execute(email.getText().toString(), password.getText().toString(), Preferences.getInformations(mActivity).id);
 					} else {
-						
+						FastDialog.showDialog(mActivity,
+								FastDialog.SIMPLE_DIALOG,
+								getString(R.string.popup_erreur_connexion));
 					}
 				}
 			});
@@ -171,6 +176,8 @@ public class ConnectionFragment extends Fragment {
 								User user = statusUserConnexion.getUser();
 								user.setPassword(params[1]);
 
+								
+								
 								//Log.e("password", user.getPassword());
 
 								// Preferences
@@ -213,8 +220,11 @@ public class ConnectionFragment extends Fragment {
 			if(mActivity != null) {
 
 				if(result != null) {
-					if(result.getStatus().equalsIgnoreCase("ok")) {
-						MainTabsActivity.tabAccountInformations.performClick();
+					if(result.getStatus().equalsIgnoreCase("ok")) {						
+						//MainTabsActivity.tabAccountInformations.performClick();
+						Intent intent = new Intent(mActivity,SplashScreenActivity.class);
+						startActivity(intent);
+						mActivity.finish();
 					} else {
 						FastDialog.showDialog(mActivity,
 								FastDialog.SIMPLE_DIALOG,

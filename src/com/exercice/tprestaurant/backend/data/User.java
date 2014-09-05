@@ -2,15 +2,15 @@ package com.exercice.tprestaurant.backend.data;
 
 
 public class User { 
-	private int id;
-	private String civilite; 
-	private String nom; 
-	private String prenom; 
-	private String Email; 
-	private String Password; 
-	private String mobile; 
-	private String tel; 
-	private String date_anniversaire;
+	public int id;
+	public String civilite; 
+	public String nom; 
+	public String prenom; 
+	public String email; 
+	public String password; 
+	public String mobile; 
+	public String tel; 
+	public String date_anniversaire;
 
 	public int getId() {
 		return id;
@@ -45,11 +45,11 @@ public class User {
 	}
 
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 
 	public void setEmail(String email) {
-		this.Email = email;
+		this.email = email;
 	}
 
 	public String getMobile() {
@@ -78,11 +78,11 @@ public class User {
 
 
 	public String getPassword() {
-		return Password;
+		return password;
 	}
 
 	public void setPassword(String password) {
-		this.Password = password;
+		this.password = password;
 	}
 	
 	

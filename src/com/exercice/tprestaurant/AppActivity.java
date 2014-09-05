@@ -7,12 +7,14 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+import com.exercice.tprestaurant.backend.data.User;
 import com.exercice.tprestaurant.ui.about.AboutActivity;
 import com.exercice.tprestaurant.ui.splashscreen.SplashScreenActivity;
 
@@ -92,7 +94,15 @@ public class AppActivity extends FragmentActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        	
+
+        if(Preferences.getUser(this) != null ){
+        	Log.e("dvvdvd","fefefe");        	
+    		MenuItem disconnectMenuItem = (MenuItem) menu.findItem(R.id.action_disconnect);
+    		disconnectMenuItem.setVisible(true);
+        }
+		
+		
+        
         return true;
     }
 

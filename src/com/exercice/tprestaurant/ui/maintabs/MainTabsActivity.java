@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import com.exercice.tprestaurant.AppActivity;
 import com.exercice.tprestaurant.R;
 import com.exercice.tprestaurant.backend.data.Commercant;
+import com.exercice.tprestaurant.ui.account.AccountFragment;
 import com.exercice.tprestaurant.ui.account.ConnectionFragment;
 import com.exercice.tprestaurant.ui.account.PasswordRecoveryFragment;
 import com.exercice.tprestaurant.ui.account.RegisterFragment;
@@ -158,8 +159,8 @@ public class MainTabsActivity extends AppActivity {
 
 					// getActionBar
 
-					if(Preferences.getUser(getApplicationContext()) != null && Preferences.getUser(getApplicationContext()).getId() != 0) {
-						switchContent(new RegisterFragment(), null);
+					if(Preferences.getUser(getApplicationContext()) != null && Preferences.getUser(getApplicationContext()).getId() != 0) {						
+						switchContent(new AccountFragment(), null);
 					} else {
 						switchContent(new ConnectionFragment(), null);	
 					}
