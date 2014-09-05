@@ -174,7 +174,7 @@ public class ConnectionFragment extends Fragment {
 							if(statusUserConnexion.getStatus().equalsIgnoreCase("ok")) {
 
 								User user = statusUserConnexion.getUser();
-								user.setPassword(params[1]);
+								user.password = params[1];
 
 								
 								
